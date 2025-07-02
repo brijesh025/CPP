@@ -1,0 +1,9 @@
+1.reverse(str.begin(),str.end())---Reverse the string
+2.s.substr(pos,no of char to be taken)---return substring--O(l)
+3.(+)-->add two substr[use s1+=s2 instead s1=s1+s2 for better space complexity] OR strcat(s1,s2)
+4.push_back(char)
+5.str.size() or str.length()-->O(1)
+6.for chr[size] use strlen(chr)
+7.to_string()
+
+

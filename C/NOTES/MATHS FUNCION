@@ -1,0 +1,309 @@
+5. Power: pow()
+This function raises a number to a specified power.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double base = 2.0;
+
+    double exponent = 3.0;
+
+    double result = pow(base, exponent);
+
+    printf("Power: %.2lf^%.2lf = %.2lf\n", base, exponent, result);
+
+    return 0;
+
+}
+
+Output:
+
+Power: 2.00^3.00 = 8.00
+
+6. Round Up: ceil()
+This function rounds a floating-point number up to the nearest integer.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double num = 4.3;
+
+    double ceilResult = ceil(num);
+
+    printf("Ceiling: %.2lf rounded up to the nearest integer is %.2lf\n", num, ceilResult);
+
+    return 0;
+
+}
+
+Output:
+
+Ceiling: 4.30 rounded up to the nearest integer is 5.00
+
+7. Round Down: floor()
+This function rounds a floating-point number down to the nearest integer.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double num = 4.7;
+
+    double floorResult = floor(num);
+
+    printf("Floor: %.2lf rounded down to the nearest integer is %.2lf\n", num, floorResult);
+
+    return 0;
+
+}
+
+Output:
+
+Floor: 4.70 rounded down to the nearest integer is 4.00
+
+8. Tangent: tan()
+This function calculates the tangent of an angle.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double angle = 45.0; // Angle in degrees
+
+    double radians = angle * (M_PI / 180.0); // Convert to radians
+
+    double tangentResult = tan(radians);
+
+    printf("Tangent: tan(%.2lf degrees) = %.2lf\n", angle, tangentResult);
+
+    return 0;
+
+}
+
+Output:
+
+Tangent: tan(45.00 degrees) = 1.00
+
+9. Cosine: cos()
+This function calculates the cosine of an angle.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double angle = 60.0; // Angle in degrees
+
+    double radians = angle * (M_PI / 180.0); // Convert to radians
+
+    double cosineResult = cos(radians);
+
+    printf("Cosine: cos(%.2lf degrees) = %.2lf\n", angle, cosineResult);
+
+    return 0;
+
+}
+
+Output:
+
+Cosine: cos(60.00 degrees) = 0.50
+
+10. Natural Logarithm: log()
+This function calculates the natural logarithm of a number.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double x = 2.0;
+
+    double result = log(x);
+
+    printf("Natural Logarithm: ln(%.2lf) = %.2lf\n", x, result);
+
+    return 0;
+
+}
+
+Output:
+
+Natural Logarithm: ln(2.00) = 0.69
+
+11. Logarithm: log10()
+This function calculates the logarithm (base 10) of a number.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double x = 100.0;
+
+    double result = log10(x);
+
+    printf("Base-10 Logarithm: log10(%.2lf) = %.2lf\n", x, result);
+
+    return 0;
+
+}
+
+Output:
+
+Base-10 Logarithm: log10(100.00) = 2.00
+
+12. Arc Tangent: atan()
+This function calculates the inverse tangent of a number.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double angle = 1.0;
+
+    double result = atan(angle);
+
+    printf("Arctangent: atan(%.2lf) = %.2lf radians\n", angle, result);
+
+    return 0;
+
+}
+
+Output:
+
+Arctangent: atan(1.00) = 0.79 radians
+
+13. Hypotenuse: hypot()
+This function calculates the square root of the sum of squares of two numbers.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double side1 = 3.0;
+
+    double side2 = 4.0;
+
+    double result = hypot(side1, side2);
+
+    printf("Hypotenuse Calculation: hypot(%.2lf, %.2lf) = %.2lf\n", side1, side2, result);
+
+    return 0;
+
+}
+
+Output:
+
+Hypotenuse Calculation: hypot(3.00, 4.00) = 5.00
+
+14. Cube Root: cbrt()
+This function calculates the cube root of a number.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double x = 27.0;
+
+    double result = cbrt(x);
+
+    printf("Cube Root: cbrt(%.2lf) = %.2lf\n", x, result);
+
+    return 0;
+
+}
+
+Output:
+
+Cube Root: cbrt(27.00) = 3.00
+
+15. Absolute Value: fabs()
+This function calculates the absolute value of a floating-point number.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double num = -7.5;
+
+    double absoluteValue = fabs(num);
+
+    printf("Absolute Value: fabs(%.2lf) = %.2lf\n", num, absoluteValue);
+
+    return 0;
+
+}
+
+Output:
+
+Absolute Value: fabs(-7.50) = 7.50
+
+16. Remainder: fmod()
+This function calculates the remainder of a division between two floating-point numbers.
+
+Example:
+
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double dividend = 10.5;
+
+    double divisor = 3.0;
+
+    double remainder = fmod(dividend, divisor);
+
+    printf("Floating-Point Modulo: fmod(%.2lf, %.2lf) = %.2lf\n", dividend, divisor, remainder);
+
+    return 0;
+
+}
+
+Output:
+
+Floating-Point Modulo: fmod(10.50, 3.00) = 1.50
