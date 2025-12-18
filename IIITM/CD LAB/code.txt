@@ -1,0 +1,5 @@
+named lex.yy file generate-> flex -+ --outfile=lexer.cpp yourfile.l
+named lex.yy file generate-> flex -o filename.c yourfile.l
+execute .y file --> bison -d file.y
+excute .c file using the in made compiler --> gcc compiler.c file.c -o filename -lfl
+g++ -std=c++17 q2.tab.c lex.yy.c -o q2.exe
